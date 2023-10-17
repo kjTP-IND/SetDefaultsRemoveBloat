@@ -1,1 +1,1 @@
-Powershell.exe -Command "& {Start-Process Powershell.exe -Verb RunAs -File '%~dp0DefaultsAndRemoval.ps1'}"
+Powershell.exe -noprofile -NoExit -Command "&{Start-Process Powershell -Verb RunAs '-noexit' -File '%~dp0DefaultAndRemoval.ps1'}"
